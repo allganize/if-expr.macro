@@ -1,5 +1,5 @@
 {
-    "name": "@ts-delight/if-expr.macro",
+    "name": "@allganize/if-expr.macro",
     "version": "1.0.0",
     "description": "Zero-overhead type-safe expression-oriented alternative to javascript if statements",
     "main": "if-expr.macro.js",

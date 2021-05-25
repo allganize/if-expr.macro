@@ -181,13 +181,14 @@ const IfExpr = ({ references, state, babel }) => {
   const assertExprLike = (arg, parentPath, propName) => {
     if (
       arg.type !== 'Identifier' &&
+      arg.type !== 'JSXElement' &&
       !arg.type.match(/Expression$/) &&
       !arg.type.match(/Literal$/)
     ) {
       failWith(
         7,
         parentPath.node,
-        `Expected argument passed to ${propName} to have been an identifier, literal or expression`
+        `Expected argument passed to ${propName} to have been an identifier, JSX element, literal or expression`
       );
     }
   };
